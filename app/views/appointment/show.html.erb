@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+<div class="content-body">
+  <div class="row col mb-3 text-center">
+    <h1><%= @appointment.persona %></h1>
+    <p>
+      <strong>Telefono: </strong> <%= @appointment.telefono %><br />
+      <strong>Peluqueria: </strong> <%= @appointment.salon.to_s %><br />
+      <strong>Fecha: </strong> <%= @appointment.fecha %><br />
+      <strong>Hora: </strong> <%= @appointment.hora %><br />
+    </p>
+    <hr>
+    <a class="nav-link active" aria-current="page" href="/DS9/appointment/list">Volver a la lista de citas</a>
+  </div>
+
+</div>
+<% end %>
+

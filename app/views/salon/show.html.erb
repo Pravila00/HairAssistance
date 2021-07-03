@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+<div class="content-body">
+  <div class="row col mb-3 text-center">
+    <h1><%= @salon.nombre %></h1>
+    <p>
+      <strong>Horario :</strong> <%= @salon.horario %><br />
+      <strong>Localización:</strong> <%= @salon.localizacion %><br />
+    </p>
+    <hr>
+    <a class="nav-link active" aria-current="page" href="/DS9/salon/list">Volver a la lista de peluquerías</a>
+  </div>
+
+</div>
+<% end %>
+

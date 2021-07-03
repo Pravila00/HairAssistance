@@ -1,0 +1,8 @@
+<h1>Lista de citas</h1>
+<ul><% @appointments.each do |appointment| %>
+    <li>
+      <%= link_to appointment.persona, appointment_path(appointment) %>
+  <% end %></li>
+</ul>
+
+<div><%= link_to 'Crear cita', new_appointment_path %></div>

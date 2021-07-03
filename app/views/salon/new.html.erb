@@ -1,0 +1,32 @@
+<% if user_signed_in? %>
+<div class="content-body">
+  <div class="row col mb-3 text-center">
+
+  <h1>Añadir una nueva peluqueria</h1>
+
+  <%= form_tag :action => 'create' do %>
+
+      <p><label for = "salon_nombre">Nombre de la peluqueria</label>
+        <div>
+          <%= text_field 'salons', 'nombre' %></p>
+        </div>
+
+
+      <p><label for = "salon_horario">Horario (hh:mm-hh:mm)</label>
+        <div>
+          <%= text_field 'salons', 'horario' %></p>
+        </div>
+
+
+      <p><label for = "salon_localizacion">Localizacion</label>
+        <div>
+          <%= text_field 'salons', 'localizacion' %></p>
+        </div>
+
+
+      <%= submit_tag "Crear la peluqueria", class: 'btn btn-primary' %>
+
+  <% end -%>
+  </div>
+</div>
+<% end %>

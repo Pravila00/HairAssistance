@@ -1,0 +1,39 @@
+<% if user_signed_in? %>
+<div class="content-body">
+  <div class="row col mb-3 text-center">
+
+    <h1>Añadir una cita</h1>
+
+    <%= form_tag :action => 'create' do %>
+
+      <p><strong><label for = "cita_nombre">Nombre </label></strong>
+      <div>
+        <%= text_field 'appointments', 'persona' %></p>
+      </div>
+
+      <p><strong><label for = "cita_nombre">Telefono </label></strong>
+      <div>
+        <%= text_field 'appointments', 'telefono' %></p>
+      </div>
+
+      <p><strong><label for = "cita_nombre">Fecha </label></strong>
+      <div>
+        <%= text_field 'appointments', 'fecha' %></p>
+      </div>
+
+      <p><strong><label for = "cita_nombre">Hora </label></strong>
+      <div>
+        <%= text_field 'appointments', 'hora' %></p>
+      </div>
+
+      <p><strong><label for = "peluqueria">Peluqueria </label></strong>
+      <div>
+        <%= collection_select(:appointments, :salon_id, @salons, :id, :nombre, prompt: true) %></p>
+      </div>
+
+      <%= submit_tag "Registrar la cita", class: 'btn btn-primary' %>
+
+    <% end -%>
+  </div>
+</div>
+<% end %>

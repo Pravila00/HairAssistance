@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+<div class="content-body">
+  <div class="row col mb-3 text-center">
+
+    <h1>Editar la peluquería</h1>
+
+    <%= form_for @salon, :url =>{:action => "update", :id =>@salon} do |f| %>
+
+      <p><strong>Nombre:</strong> <%= f.text_field 'nombre' %></p>
+      <p><strong>Horario:</strong> <%= f.text_field  'horario' %></p>
+      <p><strong>Localización:</strong> <%= f.text_field  'localizacion' %></p>
+
+      <%= f.submit "Guardar cambios", class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
+<% end %>

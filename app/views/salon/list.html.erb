@@ -1,0 +1,38 @@
+<% if user_signed_in? %>
+<div class="content-body">
+  <div class="row col mb-3 text-center">
+    <% if @salons.blank? %>
+      <p>No hay actualmente ninguna peluquería</p>
+    <% else %>
+      <strong><h1>Lista de peluquerias</h1></strong>
+      <hr>
+      <ul id = "salons">
+        <% @salons.each do |c| %>
+          <div class="row col -3">
+            <li>
+              <div class="p-3">
+                <span>
+                  <h4><%= link_to c.nombre, {:action => 'show', :id => c.id} -%></h4>
+                  <%= c.localizacion %>
+                </span>
+              </div>
+              <div>
+                <span class="p-3">
+                  <%= link_to 'Editar', {:action => "edit", :id => c.id}, class: "btn btn-secondary" %>
+                </span>
+                <span class="p-3">
+                  <%= link_to "Eliminar", {:action => 'delete', :id => c.id},:data => {:confirm => '¿Estas seguro de eliminar la peluqueria?'},
+                              class: "btn btn-danger" %>
+                </span>
+              </div>
+            </li>
+          </div>
+          <hr>
+        <% end %>
+      </ul>
+
+    <% end %>
+  </div>
+
+</div>
+<% end %>

@@ -1,0 +1,22 @@
+<% if user_signed_in? %>
+<div class="content-body">
+  <div class="row col mb-3 text-center">
+
+      <strong><h1>Editar la cita</h1></strong>
+      <hr>
+      <div class="row col -3">
+        <%= form_for @appointment, :url =>{:action => "update", :id =>@appointment} do |f| %>
+          <p><strong>Nombre de la persona: </strong><%= f.text_field 'persona' %></p>
+          <p><strong>Telefono:</strong> <%= f.text_field  'telefono' %></p>
+          <p><strong>Fecha: (dd/mm/yyyy)</strong> <%= f.text_field  'fecha', class: 'datepicker' %></p>
+          <p><strong>Hora: (hh:mm)</strong> <%= f.text_field  'hora' %></p>
+          <p><strong>Peluqueria:</strong> <%= f.collection_select(:salon_id, @salons, :id, :nombre, prompt: true) %>
+          <hr>
+          <%= f.submit "Guardar cambios", class: 'btn btn-primary' %>
+        <% end %>
+      </div>
+  </div>
+
+</div>
+<% end %>
+
