@@ -10,3 +10,10 @@ Things you can do:
 
 * Manage access to the platform allowing only hair dressers access to it.
 
+User interface of the site
+  *![](home.jpg)
+  *![](sign_up.jpg)
+  *![](login.jpg)
+  *![](hair_dressers.jpg)
+  *![](appointments.jpg)
+  *![](add_appointment.jpg)
