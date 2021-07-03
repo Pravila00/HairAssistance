@@ -1,6 +1,6 @@
 ## Hair Assistance
 
-Hair Assistance is an open source project for helping hair dressers manage appointments.
+Hair Assistance is an open source project using Ruby on Rails for helping hair dressers manage appointments.
 
 Things you can do:
 
