@@ -1,24 +1,12 @@
-# README
+# Hair Assistance
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hair Assistance is an open source project for helping hair dressers manage appointments.
 
-Things you may want to cover:
+Things you can do:
 
-* Ruby version
+* Create, edit, delete and upload (CRUD) hair shops with the important information.
 
-* System dependencies
+* Create, edit, delete and upload (CRUD) appointments in a hair shop with the information of the client.
 
-* Configuration
+* Manage access to the platform allowing only hair dressers access to it.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
