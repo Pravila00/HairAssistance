@@ -1,4 +1,4 @@
-# Hair Assistance
+## Hair Assistance
 
 Hair Assistance is an open source project for helping hair dressers manage appointments.
 
@@ -10,10 +10,20 @@ Things you can do:
 
 * Manage access to the platform allowing only hair dressers access to it.
 
-User interface of the site
-  *![](home.jpg)
-  *![](sign_up.jpg)
-  *![](login.jpg)
-  *![](hair_dressers.jpg)
-  *![](appointments.jpg)
-  *![](add_appointment.jpg)
+Home page
+![](home.jpg)
+
+Sign up page
+![](sign_up.jpg)
+
+Login page
+![](login.jpg)
+
+List of hair shops
+![](hair_dressers.jpg)
+
+List of appointments
+![](appointments.jpg)
+
+Add an appointment
+![](add_appointment.jpg)
